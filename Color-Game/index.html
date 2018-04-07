@@ -4,6 +4,11 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+
+<!--
+-    Created on : 7-apr-2018
+-    Author     : RemixHeart
+-->
 <html>
     <head>
         <title>RGB Color Game</title>
@@ -12,11 +17,22 @@ and open the template in the editor.
         <link rel="stylesheet" href="colorgame.css"/>
     </head>
     <body>
-        <h1>The Great <span id="colorDisplay">RGB</span> Color Game</h1>
-        <!-- <div class=""> -->
-        <div>
-          <span id="message"> </span>
+        <!-- Top Stripe with the color mode -->
+        <h1>The Great
+        <br>
+        <span id="colorDisplay">RGB</span>
+        <br>
+         Color Game</h1>
+
+        <!-- Stripe with the various buttons -->
+        <div id="stripe">
+          <button id="reset">New Colors</button>
+          <span id="message"></span>
+          <button class="mode">Easy</button>
+          <button class="mode selected">Hard</button>
         </div>
+
+        <!-- Squares -->
         <div id="container">
           <div class="square"> </div>
           <div class="square"> </div>
@@ -25,7 +41,6 @@ and open the template in the editor.
           <div class="square"> </div>
           <div class="square"> </div>
         </div>
-
 
         <script type="text/javascript" src="colorgame.js"></script>
     </body>
